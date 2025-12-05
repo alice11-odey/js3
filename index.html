@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascrip P3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Currency Converter</h3>
+        <div class="options">
+            <div class="form-control">
+                <label for="from">From</label>
+                <select name="from" id="from">
+                    <option value="" selected hidden>--- Select currency ---</option>
+                    <option value="USD">USD</option>
+                    <option value="NGN">NGN</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="to">To</label>
+                <select name="to" id="to">
+                    <option value="" selected hidden>--- Select currency ---</option>
+                    <option value="USD">USD</option>
+                    <option value="NGN">NGN</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                </select>
+            </div>
+        </div>
+        <input type="text" id="amount" placeholder="Enter Amount...">
+        <button type="button" id="convert">Convert</button>
+        <div class="result">
+            <p>Converted Currency: <span id="result"></span></p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
